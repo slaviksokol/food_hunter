@@ -4,11 +4,11 @@ window.mlfConfig = {
 	debug: false, //отладка
 	startUrl: 'http://dev.lvk29.ru/mobile_app/', //стартовый адрес
 	deviceId: '', //ид устройства
-	connection: false, //статус соединения
+	connection: true, //статус соединения
 	version: localStorage.getItem('version'),
 	tmpl: false, //templates
 	loadCnt: false, //таймаут получения контента
-	baseName: 'mlifedemo', //имя базы
+	baseName: 'lvk29demo', //имя базы
 	last_version: false, //последняя версия полученая с сервера обновлений
 	pageUpdateCount: 15, //максимум страниц за раз при обновлении
 	browser: true, //если приложение запущено в браузере, использовать для разработки

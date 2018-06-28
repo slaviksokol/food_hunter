@@ -3,13 +3,13 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.lvk29.test"
     versionCode = "10"
-    version     = "1.0.0" >
-<icon src="icon.png" />
+    version     = "0.0.1" >
+    <icon src="icon.png" />
 <!-- versionCode is optional and Android only -->
     <plugin name="cordova-plugin-whitelist" />
   <name>LVK29 Example</name>
-<allow-navigation href="http://*/*" />
-<allow-intent href="https://*/*" />
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="https://*/*" />
   <description>
       An example for LVK29 build docs.
   </description>
