@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="mlife.mobileapptest" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-<name>MLife.MobileApp.</name>
+<name>Food Hunter</name>
 <description>
-MobileApp demo
+Food Hunter demo
 </description>
-<author email="info@mlife-media.by" href="http://mlife-media.by">MLife Media</author>
+<author email="info@lvk29.ru" href="http://dev.lvk29.ru">MLife Media</author>
 <content src="index.html" />
 <plugin name="cordova-admob-sdk" spec="~0.13.1">
     <variable name="PLAY_SERVICES_VERSION" value="11.6.2" />

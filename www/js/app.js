@@ -1,6 +1,6 @@
 window.curentLoadBase = false; //ожидание загрузки данных в кеш-базу
 window.curentLang = 'ru'; //язык по умолчанию
-var startUrl = 'https://mlife-media.by/mobile_app/';
+var startUrl = 'http://dev.lvk29.ru/mobile_app/';
 if(localStorage.getItem('startUrl')){
 	startUrl = localStorage.getItem('startUrl');
 }
