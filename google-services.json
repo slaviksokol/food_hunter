@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "813644066144",
-    "firebase_url": "https://mlifemobileapptest.firebaseio.com",
-    "project_id": "mlifemobileapptest",
-    "storage_bucket": "mlifemobileapptest.appspot.com"
+    "project_number": "949830358205",
+    "firebase_url": "https://food-hunter-8213d.firebaseio.com",
+    "project_id": "food-hunter-8213d",
+    "storage_bucket": "food-hunter-8213d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:813644066144:android:f5e94b97c25687c4",
+        "mobilesdk_app_id": "1:949830358205:android:9414c2fcf3a21d03",
         "android_client_info": {
-          "package_name": "mlife.mobileapptest"
+          "package_name": "com.lvk29.foodhunter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "813644066144-jolas58gqdrpfoj9c3lfs4dttjrapiou.apps.googleusercontent.com",
+          "client_id": "949830358205-m7dfuc4po2rggn7c8ouseurbpggnvnem.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCAMXKjeddx1M95q-fZQAr5VzfGD8b9dyY"
+          "current_key": "AIzaSyAeGDYPN8wFuvfZRdQnzivkJp1nVDoN290"
         }
       ],
       "services": {
