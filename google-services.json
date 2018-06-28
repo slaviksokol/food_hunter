@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "813644066144",
+    "firebase_url": "https://mlifemobileapptest.firebaseio.com",
+    "project_id": "mlifemobileapptest",
+    "storage_bucket": "mlifemobileapptest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813644066144:android:f5e94b97c25687c4",
+        "android_client_info": {
+          "package_name": "mlife.mobileapptest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813644066144-jolas58gqdrpfoj9c3lfs4dttjrapiou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAMXKjeddx1M95q-fZQAr5VzfGD8b9dyY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,17 +1,22 @@
 window.curentLoadBase = false; //ожидание загрузки данных в кеш-базу
 window.curentLang = 'ru'; //язык по умолчанию
+var startUrl = 'https://mlife-media.by/mobile_app/';
+if(localStorage.getItem('startUrl')){
+	startUrl = localStorage.getItem('startUrl');
+}
+
 window.mlfConfig = {
 	debug: false, //отладка
-	startUrl: 'http://dev.lvk29.ru/mobile_app/', //стартовый адрес
+	startUrl: startUrl, //стартовый адрес
 	deviceId: '', //ид устройства
-	connection: true, //статус соединения
+	connection: false, //статус соединения
 	version: localStorage.getItem('version'),
 	tmpl: false, //templates
 	loadCnt: false, //таймаут получения контента
-	baseName: 'lvk29demo', //имя базы
+	baseName: 'mlifedemo', //имя базы
 	last_version: false, //последняя версия полученая с сервера обновлений
-	pageUpdateCount: 15, //максимум страниц за раз при обновлении
-	browser: true, //если приложение запущено в браузере, использовать для разработки
+	pageUpdateCount: 20, //максимум страниц за раз при обновлении
+	browser: false, //если приложение запущено в браузере, использовать для разработки
 	lang: {
 		ru: {
 			'FIRST_LOAD': '',
