@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
 <title>MLife.MobileApp.</title>
 <!-- Path to Framework7 Library CSS-->
 <link rel="stylesheet" href="css/framework7.min.css">
@@ -14,6 +15,8 @@
 <style id="stylesBlock"></style>
 </head>
 <body>
+Привет мир
+<script>alert('hellloooo')</script>
 <div class="mlf__wrap"></div>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/framework7.min.js"></script>

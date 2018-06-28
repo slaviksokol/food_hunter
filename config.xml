@@ -6,9 +6,10 @@
     version     = "1.0.0" >
 
 <!-- versionCode is optional and Android only -->
-
+    <plugin name="cordova-plugin-whitelist" />
   <name>LVK29 Example</name>
-
+<allow-navigation href="http://*/*" />
+<allow-intent href="https://*/*" />
   <description>
       An example for LVK29 build docs.
   </description>
