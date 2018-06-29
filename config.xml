@@ -40,7 +40,7 @@ Food Hunter demo
 		<allow-intent href="market:*" />
 		<preference name="android-minSdkVersion" value="14" />
 		<preference name="SplashMaintainAspectRatio" value="true" />
-		<splash src="res/screen/android/splash.png"/>
+		<splash src="res/screen/android/splash.gif"/>
 		<icon src="res/android/ldpi.png" density="ldpi" />
         <icon src="res/android/mdpi.png" density="mdpi" />
         <icon src="res/android/hdpi.png" density="hdpi" />
