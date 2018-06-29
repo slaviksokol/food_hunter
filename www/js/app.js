@@ -6,7 +6,7 @@ if(localStorage.getItem('startUrl')){
 }
 
 window.mlfConfig = {
-	debug: false, //отладка
+	debug: true, //отладка
 	startUrl: startUrl, //стартовый адрес
 	deviceId: '', //ид устройства
 	connection: false, //статус соединения
