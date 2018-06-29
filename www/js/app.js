@@ -13,7 +13,7 @@ window.mlfConfig = {
 	version: localStorage.getItem('version'),
 	tmpl: false, //templates
 	loadCnt: false, //таймаут получения контента
-	baseName: 'mlifedemo', //имя базы
+	baseName: 'foodhunter', //имя базы
 	last_version: false, //последняя версия полученая с сервера обновлений
 	pageUpdateCount: 20, //максимум страниц за раз при обновлении
 	browser: false, //если приложение запущено в браузере, использовать для разработки
