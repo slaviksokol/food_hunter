@@ -526,10 +526,10 @@ function setIndikator(persent){
 	}else{
 	
 		if((!$('.loadingBlock').html()) || (persent=='1')){
-			$('.mlf__wrap').html('<div class="loadingBlock"><div class="loadingBlock__title">'+getLang('START_LOADING')+'</div><div class="loadingBlock__indikator"></div></div>');
+			$('.mlf__wrap').html('<div class="loadingBlock"><div class="loadingBlock__title">'+getLang('START_LOADING')+'</div><div class="loadingBlock__indikator preloader color-red"></div></div>');
 		}
 	
-		$('.loadingBlock__indikator').html('<span style="width:'+persent+'%;">'+persent+'%</span>');
+		//$('.loadingBlock__indikator').html('<span style="width:'+persent+'%;">'+persent+'%</span>');
 	}
 }
 
