@@ -48,7 +48,8 @@ Food Hunter demo
 	<preference name="AnimatedSplashScreenAnimationDuration" value="5" />
 	<preference name="SplashScreen" value="false" />
 	<preference name="AnimatedSplashScreenAnimationRepeatCount" value="1" />
-	<preference name="AnimatedSplashScreenIosImages" value="01.png,02.png,03.png,04.png,05.png,06.png" />
+	<preference name="AnimatedSplashScreenIosImages" value="splashanimated01.png,splashanimated02.png,splashanimated03.png,splashanimated04.png,splashanimated05.png,splashanimated06.png" />
+	<preference name="AnimatedSplashScreenAndroidImages" value="splashanimated01,splashanimated02,splashanimated03,splashanimated04,splashanimated05,splashanimated06" />
     <icon src="icon.png" />
     <platform name="android">
         <resource-file src="google-services.json" target="google-services.json" />
