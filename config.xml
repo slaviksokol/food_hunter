@@ -59,12 +59,6 @@ Food Hunter demo
         <icon src="res/android/xhdpi.png" density="xhdpi" />
         <icon src="res/android/xxhdpi.png" density="xxhdpi" />
         <icon src="res/android/xxxhdpi.png" density="xxxhdpi" />
-		<resource-file src="res/screen/android/splashanimated01.png" target="app/src/main/res/drawable-port-xxxhdpi/splashanimated01.png" />
-		<resource-file src="res/screen/android/splashanimated02.png" target="app/src/main/res/drawable-port-xxxhdpi/splashanimated02.png" />
-		<resource-file src="res/screen/android/splashanimated03.png" target="app/src/main/res/drawable-port-xxxhdpi/splashanimated03.png" />
-		<resource-file src="res/screen/android/splashanimated04.png" target="app/src/main/res/drawable-port-xxxhdpi/splashanimated04.png" />
-		<resource-file src="res/screen/android/splashanimated05.png" target="app/src/main/res/drawable-port-xxxhdpi/splashanimated05.png" />
-		<resource-file src="res/screen/android/splashanimated06.png" target="app/src/main/res/drawable-port-xxxhdpi/splashanimated06.png" />
     </platform>
     <platform name="ios">
 		<resource-file src="GoogleService-Info.plist" />
@@ -95,12 +89,6 @@ Food Hunter demo
 		<icon src="res/ios/icon-50.png" width="50" height="50" />
 		<icon src="res/ios/icon-50@2x.png" width="100" height="100" />
 		<icon src="res/ios/icon-1024.png" width="1024" height="1024" />
-		<custom-resource catalog="1" idiom="universal" scale="1x" src="res/screen/ios/splashanimated01.png" type="image" />
-		<custom-resource catalog="2" idiom="universal" scale="1x" src="res/screen/ios/splashanimated02.png" type="image" />
-		<custom-resource catalog="3" idiom="universal" scale="1x" src="res/screen/ios/splashanimated03.png" type="image" />
-		<custom-resource catalog="4" idiom="universal" scale="1x" src="res/screen/ios/splashanimated04.png" type="image" />
-		<custom-resource catalog="5" idiom="universal" scale="1x" src="res/screen/ios/splashanimated05.png" type="image" />
-		<custom-resource catalog="6" idiom="universal" scale="1x" src="res/screen/ios/splashanimated06.png" type="image" />
 		<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
 			<string>need camera access to take pictures</string>
 		</edit-config>
