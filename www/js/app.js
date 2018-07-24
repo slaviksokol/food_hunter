@@ -264,7 +264,7 @@ function loadBaseDefault(step,step2){
 			});
 			
 		}else if(step==3){
-			
+
 			Framework7.request({
 				url : window.mlfConfig.startUrl+'menu/',
 				//async : false,
@@ -273,7 +273,7 @@ function loadBaseDefault(step,step2){
 				data : {version: window.mlfConfig.version, device:window.mlfConfig.deviceId, key: localStorage.getItem('authorize_key')},
 				dataType: 'html',
 				success : function(data){
-					
+
 					setIndikator(10);
 
 					db.transaction(function(tx){
@@ -283,7 +283,7 @@ function loadBaseDefault(step,step2){
 					});
 				},
 				error : function(){
-					
+
 					db.transaction(function(tx){
 						tx.executeSql("DELETE FROM tmpl WHERE ID>0",[]);
 					},function(){},function(){
@@ -291,12 +291,45 @@ function loadBaseDefault(step,step2){
 						setIndikator('error');
 
 					});
-					
-					
+
+
 				}
 			});
-			
+
 		}else if(step==4){
+
+            Framework7.request({
+                url : window.mlfConfig.startUrl+'menuright/',
+                //async : false,
+                cache: false,
+                crossDomain: true,
+                data : {version: window.mlfConfig.version, device:window.mlfConfig.deviceId, key: localStorage.getItem('authorize_key')},
+                dataType: 'html',
+                success : function(data){
+
+                    setIndikator(15);
+
+                    db.transaction(function(tx){
+                        tx.executeSql("INSERT INTO block (ID, text) VALUES (?,?)",['menuright',data],function(){
+                            loadBaseDefault(5);
+                        });
+                    });
+                },
+                error : function(){
+
+                    db.transaction(function(tx){
+                        tx.executeSql("DELETE FROM tmpl WHERE ID>0",[]);
+                    },function(){},function(){
+                        window.curentLoadBase = false;
+                        setIndikator('error');
+
+                    });
+
+
+                }
+            });
+
+        }else if(step==5){
 			
 			Framework7.request({
 				url : window.mlfConfig.startUrl+'js/',
@@ -307,43 +340,10 @@ function loadBaseDefault(step,step2){
 				dataType: 'html',
 				success : function(data){
 					
-					setIndikator(15);
-
-					db.transaction(function(tx){
-					tx.executeSql("INSERT INTO block (ID, text) VALUES (?,?)",['js',data],function(){
-					loadBaseDefault(5);
-					});
-					});
-				},
-				error : function(){
-					
-					db.transaction(function(tx){
-						tx.executeSql("DELETE FROM tmpl WHERE ID>0",[]);
-					},function(){},function(){
-						window.curentLoadBase = false;
-						setIndikator('error');
-
-					});
-					
-					
-				}
-			});
-			
-		}else if(step==5){
-			
-			Framework7.request({
-				url : window.mlfConfig.startUrl+'css/',
-				//async : false,
-				cache: false,
-				crossDomain: true,
-				data : {version: window.mlfConfig.version, device:window.mlfConfig.deviceId, key: localStorage.getItem('authorize_key')},
-				dataType: 'html',
-				success : function(data){
-					
 					setIndikator(20);
 
 					db.transaction(function(tx){
-					tx.executeSql("INSERT INTO block (ID, text) VALUES (?,?)",['css',data],function(){
+					tx.executeSql("INSERT INTO block (ID, text) VALUES (?,?)",['js',data],function(){
 					loadBaseDefault(6);
 					});
 					});
@@ -365,6 +365,39 @@ function loadBaseDefault(step,step2){
 		}else if(step==6){
 			
 			Framework7.request({
+				url : window.mlfConfig.startUrl+'css/',
+				//async : false,
+				cache: false,
+				crossDomain: true,
+				data : {version: window.mlfConfig.version, device:window.mlfConfig.deviceId, key: localStorage.getItem('authorize_key')},
+				dataType: 'html',
+				success : function(data){
+					
+					setIndikator(25);
+
+					db.transaction(function(tx){
+					tx.executeSql("INSERT INTO block (ID, text) VALUES (?,?)",['css',data],function(){
+					loadBaseDefault(7);
+					});
+					});
+				},
+				error : function(){
+					
+					db.transaction(function(tx){
+						tx.executeSql("DELETE FROM tmpl WHERE ID>0",[]);
+					},function(){},function(){
+						window.curentLoadBase = false;
+						setIndikator('error');
+
+					});
+					
+					
+				}
+			});
+			
+		}else if(step==7){
+			
+			Framework7.request({
 				url : window.mlfConfig.startUrl+'page/',
 				//async : false,
 				cache: false,
@@ -372,7 +405,7 @@ function loadBaseDefault(step,step2){
 				data : {version: window.mlfConfig.version, device:window.mlfConfig.deviceId, key: localStorage.getItem('authorize_key')},
 				dataType: 'json',
 				success : function(data){
-					setIndikator(25);
+					setIndikator(30);
 					loadPages(false,data);
 				},
 				error : function(){
