@@ -547,6 +547,7 @@ $(document).on('click','.loadData',function(e){
 	if(typeof navigator.splashscreen != 'undefined'){ 
 		navigator.splashscreen.hide();
 	}
+    //app.view.main.router.navigate('/reload/');
 });
 
 //установка индикатора загрузки
