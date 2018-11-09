@@ -18,5 +18,12 @@
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&scroll=false"></script>
+<script type="text/javascript">
+    var handleOpenURL = function(url) {
+        console.log("RECEIVED LINK: " + url);
+        alert('asd');
+        window.localStorage["link"] = JSON.stringify(url);
+    };
+</script>
 </body>
 </html>
