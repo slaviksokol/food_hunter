@@ -50,6 +50,7 @@
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="SplashScreenDelay" value="6000" />
 	<preference name="orientation" value="portrait" />
+	<preference name="MAIN_LANGUAGE" value="English" />
 	<preference name="ADDITIONAL_LANGUAGES" value="ru" />
 	<icon src="icon.png" />
 	<platform name="android">
