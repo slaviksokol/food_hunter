@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.lvk29.foodhunter" version="0.9.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.lvk29.foodhunter" version="0.9.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Food Hunter</name>
 	<description>
 		Food Hunter demo
@@ -21,14 +21,14 @@
 	<plugin name="cordova-plugin-camera" spec="~4.0.3" />
 	<plugin name="cordova-plugin-media" spec="5.0.2" />
 	<plugin name="cordova-plugin-media-capture" spec="3.0.2" />
-	<plugin name="cordova-plugin-file-downloader" spec="~0.3.2" />
+	<plugin name="cordova-plugin-file-downloader" spec="~0.4.0" />
 	<plugin name="cordova-plugin-file" spec="~6.0.1" />
 	<plugin name="cordova-plugin-file-transfer" spec="~1.7.1" />
 	<plugin name="cordova-open" spec="~1.0.12" />
 	<plugin name="cordova-plugin-network-information" spec="~2.0.1" />
 	<plugin name="cordova-sqlite-storage" spec="~0.8.5" />
 	<plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
-	<plugin name="cordova-plugin-splashscreen" spec="~4.0.3"/>
+	<plugin name="cordova-plugin-splashscreen" spec="~5.0.2"/>
 	<plugin name="cordova-custom-config" spec="~5.0.2"/>
 	<plugin name="cordova-plugin-insomnia" spec="~4.3.0"/>
 	<plugin name="cordova-plugin-vibration" spec="~3.1.0"/>
@@ -74,9 +74,9 @@
 		<icon src="res/android/xxxhdpi.png" density="xxxhdpi" />
 	</platform>
 	<platform name="ios">
-		<plugin name="cordova-plugin-statusbar" spec="~2.4.2"/>
+		<!--<plugin name="cordova-plugin-statusbar" spec="~2.4.2"/>
 		<preference name="StatusBarBackgroundColor" value="#ff9800" />
-		<preference name="StatusBarOverlaysWebView" value="true" />
+		<preference name="StatusBarOverlaysWebView" value="true" />-->
 		<resource-file src="GoogleService-Info.plist" />
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
