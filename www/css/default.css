@@ -17,4 +17,4 @@
 /*.loadingBlock__indikator {background:#ededed;color:#ffffff;display:block;width:100%;margin-bottom:10px;border:1px solid green;}
 .loadingBlock__indikator span {display:block;background:green;text-align:center;min-width:15%; }*/
 
-.mlf__wrap {display:block;width:100%;height:100%;z-index:5001;background:#ffffff;}
+.mlf__wrap {display:block;width:100%;height:100%;z-index:5001;}
